@@ -38,7 +38,7 @@ class MKMapAnnotationView<Content: View>: MKAnnotationView {
         backgroundColor = .clear
         #endif
 
-        let controller = NativeHostingController(rootView: mapAnnotation.content, ignoreSafeArea: true)
+        let controller = NativeHostingController(rootView: mapAnnotation.content)
 
         #if canImport(UIKit)
         controller.view.backgroundColor = .clear
